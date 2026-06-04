@@ -1,4 +1,4 @@
-
+#include "easyfind.hpp"
 
 const char* ValueNotFound::what() const throw(){
 	return("Value not found");

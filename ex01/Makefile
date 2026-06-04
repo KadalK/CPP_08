@@ -3,7 +3,7 @@ CPP= c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98 -g3
 
 SRCS = main.cpp \
-	   Span.hpp
+	   Span.cpp
 
 INCS = Span.hpp
 

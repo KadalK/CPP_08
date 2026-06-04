@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <vector>
+#include <exception>
 
 class Span{
 private:
@@ -13,9 +14,15 @@ public:
 	Span(const Span& copy);
 	Span& operator=(const Span& other);
 
+
+	class NoSpanException : std::exception{
+		virtual const char* what() const throw();
+	};
+
 	std::vector<unsigned int> getN() const;
 
-	void addNumber(unsigned int n);
+	void addNumber(unsigned int value);
+	void addNumbers(unsigned int n);
 	unsigned int shortestSpan();
 	unsigned int longestSpan();
 
