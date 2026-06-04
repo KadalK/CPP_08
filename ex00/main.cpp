@@ -20,8 +20,7 @@ int main(){
 				std::cout << ", ";
 			if (i == len - 1)
 			{
-				std::cout << "}";
-				std::cout << std::endl;
+				std::cout << "}" << std::endl;
 			}
 		}
 		std::cout << std::endl;

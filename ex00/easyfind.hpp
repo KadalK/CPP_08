@@ -1,5 +1,6 @@
-#pragma once
-#include <algorithm>
+#ifndef EASYFIND_HPP
+#define EASYFIND_HPP
+
 #include <exception>
 
 template <typename T>
@@ -13,3 +14,5 @@ class ValueNotFound : public std::exception {
 };
 
 #include "easyfind.tpp"
+
+#endif

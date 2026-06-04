@@ -1,4 +1,5 @@
-#pragma once
+#ifndef SPAN_HPP
+#define SPAN_HPP
 
 #include <iostream>
 #include <vector>
@@ -28,3 +29,5 @@ public:
 
 	~Span();
 };
+
+#endif
